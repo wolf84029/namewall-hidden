@@ -1,5 +1,5 @@
 [build]
-  command = "npm install && npm run build && mkdir -p dist && cp index.html dist/"
+  command = "npm install && mkdir -p dist && npm run build && cp index.html dist/"
   publish = "dist"
 
 [build.environment]
