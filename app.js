@@ -1,12 +1,4 @@
-const firebaseConfig = {
-  apiKey: "AIzaSyD5cbyEr8r_A72r_MO3bWPopszcMlIy8Sw",
-  authDomain: "namewall-7c16c.firebaseapp.com",
-  databaseURL: "https://namewall-7c16c-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "namewall-7c16c",
-  storageBucket: "namewall-7c16c.firebasestorage.app",
-  messagingSenderId: "713911368914",
-  appId: "1:713911368914:web:92bb46e1ebef08a0bd010b"
-};
+import { firebaseConfig } from './firebase-config.js';
 
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
@@ -84,5 +76,5 @@ function escapeHtml(unsafe) {
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
+    .replace(/'/g, "&#39;");
 }
