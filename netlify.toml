@@ -1,0 +1,6 @@
+[build]
+  command = "npm install && npm run build && mkdir -p dist && cp index.html dist/"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "16"
