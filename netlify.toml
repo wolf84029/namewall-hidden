@@ -1,5 +1,5 @@
 [build]
-  command = "npm install && mkdir -p dist && npm run build && cp index.html dist/ && ls -la dist/ && echo 'Files in dist:' && cat dist/bundle.js"
+  command = "cp index.html app.js dist/"
   publish = "dist"
 
 [build.environment]
